@@ -1,0 +1,89 @@
+{
+    "basics": {
+        "name": "Moaz Ryhan",
+        "label": "MERN stack Developer",
+        "email": "moazryhan@gmail.com",
+        "phone": "(+20) 1159454409",
+        "picture": "mt.png",
+        "x_title": "Hello, I'm",
+        "job1": "MERN stack",
+        "job2": "Developer",
+        "description": "Hello! I'm Moaz! Your web development enthusiast. Always down for something new and challenging! Just like markdown, I'm here to help you create beautifully formatted websites.",
+        "summary": "based in Cairo, Egypt.",
+        "keywords": "personal,website,portfolio,webdev,node.js,express.js,nest.js,react.js,next.js,web,developer,react,github,linkedin,google,telegram,material,design,ui,webapp",
+        "url": "https://Myprofile.vercel.app/",
+        "location": {
+            "address": "XX XXXXXstreet",
+            "postalCode": "XXXXX",
+            "city": "Cairo",
+            "country": "Egypt",
+            "countryCode": "EGP",
+            "region": "Giza"
+        },
+        "profiles": [
+            {
+                "network": "Google",
+                "username": "moazryhan@gmail.com",
+                "url": "mailto:moazryhan@gmail.com",
+                "x_icon": "fab fa-google"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "Moaz Ryhan",
+                "url": "https://www.linkedin.com/in/moaz-ryhan-283577278",
+                "x_icon": "fab fa-linkedin-in"
+            },
+            {
+                "network": "GitHub",
+                "username": "MoazRyhan",
+                "url": "https://github.com/MoazRyhan",
+                "x_icon": "fab fa-github"
+            },
+            {
+                "network": "Telegram",
+                "username": "Moaz Ryhan",
+                "url": "https://t.me/MoazRyhan",
+                "x_icon": "fab fa-telegram-plane"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Freelance",
+            "position": "MERN stack developer",
+            "website": "http://company.com",
+            "startDate": "2013-01-01",
+            "endDate": "2014-01-01",
+            "summary": "Description...",
+            "highlights": ["Started the company"]
+        }
+    ],
+    "education": [
+        {
+            "institution": "University",
+            "area": "Software Development",
+            "studyType": "Bachelor",
+            "startDate": "2011-01-01",
+            "endDate": "2013-01-01",
+            "gpa": "4.0",
+            "courses": ["DB1101 - Basic SQL"]
+        }
+    ],
+    "skills": [
+        {
+            "name": "Web Development",
+            "level": "Master",
+            "keywords": ["HTML", "CSS", "Javascript"]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Arabic",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "Fluent speaker"
+        }
+    ]
+}

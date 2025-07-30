@@ -1,0 +1,18 @@
+
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+/docs
+/dist
+
+# misc
+
+.env
+
+package-lock.json
