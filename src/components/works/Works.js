@@ -33,7 +33,7 @@ export const Works = () => {
       with fancy 3D animations using Three.js for 
       the background element.`,
       alter: 'React Portfolio',
-      image: `${Portfolio}`,
+      // image: `${Portfolio}`,
     },
     { 
       id: 2,
@@ -43,7 +43,7 @@ export const Works = () => {
       MEAN stack with fact-checking tool to promote actions against
       fake news.`,
       alter: 'VeriTru Project',
-      image: `${Veritru}`,
+      // image: `${Veritru}`,
     },
     { 
       id: 3,
@@ -52,16 +52,16 @@ export const Works = () => {
       description: `Logistics and Forwarding website built using
       ReactJS to design and develop its front-end.`,
       alter: 'LoFo Project',
-      image: `${Lofo}`,
+      // image: `${Lofo}`,
     },
     { 
       id: 4,
       title: 'E-commerce App', 
-            Type:"(back-end)", 
+            Type:"(Front-end)", 
       description: `A website portfolio project for the Startup Dev Team
       built using MEVN stack to demonstrate the CRUD capabilities of the tech stack.`,
       alter: 'Startup Project',
-      image: `${Startup}`,
+      // image: `${Startup}`,
     },
     { 
       id: 5,
@@ -71,7 +71,7 @@ export const Works = () => {
       built using Wordpress and PHP with integrated SEO tools to help
       the business ramp up its prospects and lead generation.`,
       alter: 'Startup Project',
-      image: `${Lacalle}`,
+      // image: `${Lacalle}`,
     },
   ]);
 
