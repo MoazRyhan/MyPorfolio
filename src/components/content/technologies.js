@@ -11,6 +11,7 @@ import postgresql from '../../assets/tech/postgresql.png';
 import typescript from '../../assets/tech/typescript.png';
 import graphql from '../../assets/tech/graphql.png';
 import rubyrails from '../../assets/tech/rubyrails.png';
+import docker from '../../assets/tech/docker.png';
 
 
 
