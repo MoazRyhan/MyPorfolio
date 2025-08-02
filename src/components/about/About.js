@@ -4,6 +4,7 @@ import { Container, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
 import { FirstName, LastName } from "../../utils/getName";
+import { motion } from "framer-motion";
 
 import './About.css';
 
@@ -25,16 +26,22 @@ export const About = () => {
   return (
     <section id="about">
       <Container component="main" className={classes.main} maxWidth="md">
-        <div className="about">
+        <motion.div
+          className="about"
+          initial={{ x: 100, opacity: 0 }} // الحركة من اليمين
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
           <div className="_img"
-            style={{ 
-              background: "url(" + profile + ")",
+            style={{
+              background: `url(${profile})`,
               backgroundSize: 'contain',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
             }}
           >
           </div>
+
           <div className="_content_wrapper">
             <Typography component='h2' variant="h5">
               <TextDecrypt text={`${greetings}`} />
@@ -44,10 +51,10 @@ export const About = () => {
             </p>
             <a href="#contact" className="contact-btn">
               <i className="fas fa-terminal"></i>
-              <Typography component='span' className="" > Send me a message...</Typography>
+              <Typography component='span'> Send me a message...</Typography>
             </a>
           </div>
-        </div>
+        </motion.div>
       </Container>
     </section>
   );

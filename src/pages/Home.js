@@ -12,6 +12,7 @@ import { SideNavbar } from '../components/nav/SideNavbar';
 import { Works } from '../components/works/Works';
 import { About } from '../components/about/About';
 import { Contact } from '../components/contact/Contact';
+import Skills from '../components/skills/skills';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -41,6 +42,7 @@ export const Home = () => {
       </div>
       <SideNavbar />
       <Works />
+      <Skills />
       <About />
       <Contact />
     </>
