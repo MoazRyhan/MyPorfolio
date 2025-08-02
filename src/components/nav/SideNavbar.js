@@ -28,14 +28,14 @@ export const SideNavbar = () => {
         </Typography>
       </a>
 
-      {/* <a href="#Technologies"
-        onClick={() => setActiveNav('#Technologies')}
-        className={activeNav === '#Technologies' ? 'active' : ''}
+      <a href="#Skills"
+        onClick={() => setActiveNav('#Skills')}
+        className={activeNav === '#Skills' ? 'active' : ''}
       >
         <Typography>
-          Tech
+          Skills
         </Typography>
-      </a> */}
+      </a>
 
       <a href="#about" 
         onClick={() => setActiveNav('#about')}

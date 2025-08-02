@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { useState } from "react";
-import { Container } from "@material-ui/core";
+import { Container, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
 
@@ -13,6 +13,7 @@ import Veritru from '../../assets/recentprojects/veritru.png';
 import Lofo from '../../assets/recentprojects/lofo.png';
 import Startup from '../../assets/recentprojects/startup.png';
 import Lacalle from '../../assets/recentprojects/lacalle.png';
+import { black } from './../theme/Themes';
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -20,59 +21,71 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '3em',
     marginBottom: "auto",
   },
+  repoButton: {
+    marginTop: theme.spacing(2),
+    backgroundColor: 'transparent',
+    color: '#333',
+    border: '2px solid #333',
+    backdropFilter: 'blur(20px)',
+    transition: 'all 0.3s ease',
+    padding : '2px' ,
+    '&:hover': {
+      backgroundColor: 'rgba(58, 55, 55, 0.1)',
+      backdropFilter: 'blur(50px)',
+      transform: 'translateY(-6px)',
+      boxShadow: '0 8px 25px rgba(0,0,0,0.15)',
+    }
+  }
 }));
 
 export const Works = () => {
   const classes = useStyles();
   const [projects, setProjects] = useState([
-    { 
-      id: 1,
-      title: 'Saraha App', 
-            Type:"(back-end)", 
-      description: `Designed and developed a ReactJS portfolio 
-      with fancy 3D animations using Three.js for 
-      the background element.`,
-      alter: 'React Portfolio',
-      // image: `${Portfolio}`,
-    },
-    { 
-      id: 2,
-      title: 'Blog App', 
-            Type:"(back-end)", 
-      description: `An advocacy project website built using
-      MEAN stack with fact-checking tool to promote actions against
-      fake news.`,
-      alter: 'VeriTru Project',
-      // image: `${Veritru}`,
-    },
-    { 
-      id: 3,
-      title: 'LuckyBank', 
-            Type:"(back-end)", 
-      description: `Logistics and Forwarding website built using
-      ReactJS to design and develop its front-end.`,
+    {
+       id: 1,
+       title: 'LuckyBank',
+       Type:"(back-end)",
+       description: `Developed a secure and scalable online banking system with user authentication, account management, session handling, real-time money transfers using Socket.IO, and CSRF protection. Implemented password hashing, session-based login with multi-device limits, and secure token workflows for password reset and email verification.`,
       alter: 'LoFo Project',
-      // image: `${Lofo}`,
+      image: `${Lofo}`,
+      repoUrl: 'https://github.com/MoazRyhan/luckybank-back-sequelize', // Add your actual repo URL
     },
-    { 
-      id: 4,
-      title: 'E-commerce App', 
-            Type:"(Front-end)", 
-      description: `A website portfolio project for the Startup Dev Team
-      built using MEVN stack to demonstrate the CRUD capabilities of the tech stack.`,
+    {
+       id: 2,
+       title: 'Social Media App',
+       Type:"(back-end)",
+       description: `Built a dynamic real-time social media platform featuring comprehensive user management, interactive post creation with image uploads, real-time notifications, and live chat functionality. Implemented secure JWT authentication, RESTful APIs, database optimization with MongoDB, and WebSocket integration for instant updates. Features include user profiles, friend systems, content moderation, and scalable architecture designed to handle thousands of concurrent users.`,
       alter: 'Startup Project',
-      // image: `${Startup}`,
+      image: `${Lacalle}`,
+      repoUrl: 'https://github.com/yourusername/social-media-app', // Add your actual repo URL
+      },
+    {
+       id: 3,
+      title: 'Blog App',
+      Type:"(back-end)",
+       description: `Created a blog platform with user authentication, CRUD operations, and SQL database integration for managing posts.`,
+      alter: 'VeriTru Project',
+      image: `${Veritru}`,
+      repoUrl: 'https://github.com/MoazRyhan/BlogApp-back-mySQL2', // Add your actual repo URL
     },
-    { 
-      id: 5,
-      title: 'Social Media App', 
-      Type:"(back-end)", 
-      description: `A website project for the La Calle Cafe business
-      built using Wordpress and PHP with integrated SEO tools to help
-      the business ramp up its prospects and lead generation.`,
+    {
+       id: 4,
+       title: 'Saraha App',
+       Type:"(back-end)",
+       description: `Developed an anonymous messaging app with Database integration for storing user messages. Secure API endpoints using JWT for authentication and authorization. Token-based features, such as user login sessions, secure data exchange, and role-based access control.`,
+      alter: 'React Portfolio',
+      image: `${Portfolio}`,
+      repoUrl: 'https://github.com/MoazRyhan/SarahaApp-back-NoSql', // Add your actual repo URL
+     },
+    {
+       id: 5,
+      title: 'E-commerce App',
+      Type:"(Front-end)",
+       description: `Built a responsive e-commerce platform with product filters, cart management, and secure checkout functionality.`,
       alter: 'Startup Project',
-      // image: `${Lacalle}`,
-    },
+      image: `${Startup}`,
+      repoUrl: 'https://moazryhan.github.io/Register', // Add your actual repo URL
+     },
   ]);
 
   return (
@@ -93,6 +106,16 @@ export const Works = () => {
               <p className="description">
                 { project.description }
               </p>
+              {/* Repository Button */}
+              <Button
+                variant="outlined"
+                className={classes.repoButton}
+                href={project.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Repo
+              </Button>
             </div>
           </div>
         ))}
