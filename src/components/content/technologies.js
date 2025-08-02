@@ -41,12 +41,12 @@ export const technologies = [
     icon: rubyrails,
   },
   {
-    name: 'git',
-    icon: git,
-  },
-  {
     name: 'docker',
     icon: docker,
+  },
+  {
+    name: 'git',
+    icon: git,
   },
   {
     name: 'HTML 5',
