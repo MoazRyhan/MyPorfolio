@@ -35,9 +35,21 @@
   },
   "scripts": {
     "start": "react-scripts start ",
-    "build": "react-scripts build && react-snapshot ",
+    "build": " react-scripts build",
+    "build:vercel": "npm install --legacy-peer-deps && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "overrides": {
+    "@react-three/drei": {
+      "three-mesh-bvh": "0.5.0",
+      "@monogrid/gainmap-js": "3.0.0"
+    }
+  },
+  "resolutions": {
+    "three": "0.128.0",
+    "three-mesh-bvh": "0.5.0",
+    "@monogrid/gainmap-js": "3.0.0"
   },
   "reactSnapshot": {
     "exclude": [
