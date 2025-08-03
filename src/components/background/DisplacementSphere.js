@@ -84,7 +84,6 @@ const DisplacementSphere = (props) => {
         };
 
         geometry.current = new SphereBufferGeometry(32, 128, 128);
-        geometry.current.setAttribute('uv2', geometry.current.attributes.uv);
 
         sphere.current = new Mesh(geometry.current, material.current);
         sphere.current.position.z = 0;
